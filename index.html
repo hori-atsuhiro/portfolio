@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- ファビコン -->
-	<!--	<link rel="icon" type="image/png" href="images/favicon.png">-->
+	<!--<link rel="icon" type="image/png" href="images/favicon.png">-->
 
 	<!-- リセットCSS -->
 	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
@@ -16,49 +16,69 @@
 	<!-- Googleフォント -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
 	<!-- オリジナルCSS -->
 	<link rel="stylesheet" href="css/style.css">
 
 </head>
 
-<body>
-	<header class="page-header wrapper">
-		<h1 class="header-title">ポートフォリオ</h1>
-		<nav>
+<body class="cover">
+	<div class="wrapper">
+		<header>
+			<h1 class="header-title">Portfolio</h1>
 			<ul class="main-nav">
-				<li><a href="index.html">プロフィール</a></li>
-				<li><a href="skill.html">スキル</a></li>
-				<li><a href="contact.html">お問い合わせ</a></li>
+				<li><a href="index.html">Profile</a></li>
+				<li><a href="skill.html">Skill</a></li>
+				<li><a href="contact.html">Contact</a></li>
 			</ul>
-		</nav>
-	</header>
-	<main class="news-contents">
-		<article class="post">
-			<h2 class="heading-large">【プロフィール】</h2>
-			<p>
-			<div class="profile-sentence">
-				<li>氏名：堀　篤弘</li>
-				<li>生年月日：1998年11月1日</li>
-				<li>出身：長野県</li>
-				<li>趣味：旅行、グルメ</li>
+		</header>
+		<main>
+			<section class="profile">
+				<article>
+					<h2>Profile</h2>
+					<div class="profile-box anime">
+						<span class="label">氏名</span>
+						<span>： 堀 篤弘</span><br>
+						<span class="label">生年月日</span>
+						<span>： 1998/11/01</span><br>
+						<span class="label">出身</span>
+						<span>： 長野県</span><br>
+						<span class="label">趣味</span>
+						<span>： 旅行</span>
+					</div>
+					<div class="space">
+						<h2>Career</h2>
+						<div class="career-box anime">
+							<ul>
+								<li>
+									2021年4月：<br>
+									長野日本無線株式会社に入社し、生産設備の機構設計を担当。<br>
+
+								</li>
+								<li>
+									2025年11月：<br>
+									ITエンジニアを目指し、退職。
+								</li>
+								<li>
+									現在：<br>
+									K&Fコンピューターサービスに入社し、<br>
+									現在はITスクールにて研修中。<br>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</article>
+				<side>
+					<img class="photo anime" src="images/myPhoto.jpg" alt="堀篤弘の写真">
+				</side>
+			</section>
+		</main>
+		<footer>
+			<div class="copyright">
+				<small>&copy;2026 Portfolio HoriAtsuhiro</small>
 			</div>
-			</p>
-			<h2 class="heading-large">【経歴】</h2>
-			<p>
-			<div class="profile-sentence">
-				2021年4月：<li>長野日本無線株式会社に入社し、<br>生産設備の機構設計を担当。</li><br>
-				2025年11月：<li>ITエンジニアを目指し、前職を退職。<br>
-				<li>K&Fコンピューターサービスに入社し、<br>
-					現在はITスクールにて研修中。</li>
-			</div>
-			</p>
-		</article>
-		<aside class="side">
-			<img src="images/profile.png" alt="働くイラスト">
-		</aside>
-	</main>
+		</footer>
+	</div>
 </body>
 
 </html>

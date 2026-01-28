@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+/*共通部分*/
+html {
+	font-size: 100%;
+}
+
+body {
+	color: black;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ヘッダー */
+.align-center {
+	text-align: center;
+}
+
+.page-header {
+	display: flex;
+/*	垂直方向の揃えを親要素の下揃え*/
+	align-items: flex-end;
+	padding-top: 1.5rem;
+
+}
+
+.header-title {
+	color: white;
+	/* 白色の文字 */
+	font-weight: bold;
+	font-size: 3rem;
+	/* 影の設定：右に0px、下に2px、ぼかし4px、色は透明度0.5の黒 */
+	text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.main-nav {
+	display: flex;
+	justify-content: right;
+	color: yellow;
+	gap: 2.5rem;
+	font-size: 2rem;
+	list-style: none;
+	margin: 0 0 0.5rem 10rem;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* 背景画像 */
+.cover {
+	background-image: url(../images/background.jpg);
+	background-size: cover;
+
+}
+
+/* 見出し */
+.heading-large {
+	font-size: 2.5rem;
+	text-align: left;
+	margin: 3rem 0 0 5rem;
+}
+
+
+.profile-sentence {
+	width: 600px;
+	flex-direction: column;
+	font-size: 2rem;
+	margin: 1rem 1rem 1rem 8rem;
+	list-style-type: none;
+	align-items: baseline;
+}
+
+.glass-card {
+	background: rgba(255, 255, 255, 0.2);
+	/* 白の半透明 */
+	backdrop-filter: blur(10px);
+	/* 背景をぼかす（ここがポイント！） */
+	-webkit-backdrop-filter: blur(10px);
+	/* Safari用 */
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	padding: 20px;
+	border-radius: 15px;
+	color: #fff;
+}
+
+.news-contents {
+	display: flex;
+	justify-content: space-between;
+}
+
+.post {
+	width: 35%;
+}
+
+.side {
+	width: 100%;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		/* 初期状態は透明 */
+	}
+
+	to {
+		opacity: 1;
+		/* 完全に表示された状態 */
+	}
+}
+
+.photo {
+	width: 60%;
+	height: 60%;
+	margin-top: 15%;
+	margin-left: 20%;
+	border-radius: 5%;
+	animation: fadeIn 2s ease-in-out;
+	/* 2秒でフェードインするアニメーションを設定 */
+}
+
+.heading-medium {
+	font-size: 3rem;
+	text-align: center;
+	line-height: 1;
+	margin-bottom: 1rem;
+}
+
+.technique {
+	max-width: 700px;
+	background-color: #faf7f0;
+	border-radius: 48px;
+	padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+	margin: 0 auto 2rem;
+}
+
+.technique p {
+	margin: 1rem 0 1rem;
+	font-size: 1.5rem;
+}
+
+.skill-post {
+	width: 50%;
+}
+
+.skill-side {
+	width: 50%;
+}
