@@ -94,13 +94,26 @@ main {
 	padding: 1rem 0 1.5rem 0;
 }
 
+ul {
+	list-style: none;
+}
+
 .profile {
 	font-size: 1.5rem;
 	display: flex;
 }
 
 article {
-	padding: 0 8rem 0 5rem;
+	padding: 0 11rem 0 8rem;
+}
+
+.profile h2 {
+	font-family: "Alfa Slab One", serif;
+	/* 影の設定：右に0px、下に2px、ぼかし4px */
+	text-shadow: 0px 2px 4px black;
+	font-weight: normal;
+	font-size: 2.5rem;
+	margin-bottom: 0.5rem;
 }
 
 h2 {
@@ -136,10 +149,17 @@ h2 {
 	font-weight: bold;
 	/* 行間を広げて読みやすく */
 	margin-bottom: 15px;
+	/*	width: 800px;*/
 }
 
-ul {
-	list-style: none;
+.profile table {
+	text-align: left
+}
+
+
+.now {
+	padding-top: 0.2rem;
+	padding-bottom: 2.9rem;
 }
 
 .label {
@@ -148,8 +168,20 @@ ul {
 	font-weight: bold;
 }
 
-.space {
-	padding-top: 2rem;
+.right1 {
+	padding-left: 3rem;
+}
+
+.right2 {
+	padding-left: 1rem;
+}
+
+.space1 {
+	margin-top: 2rem;
+}
+
+.space2 {
+	margin-top: 5rem;
 }
 
 side {
@@ -370,5 +402,5 @@ iframe {
 }
 
 .btn:hover {
-	background-color:chocolate;
+	background-color: chocolate;
 }
